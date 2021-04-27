@@ -98,12 +98,12 @@ function updateRedisDataToDatabase() { // 定时把redis中的数据同步到数
     redisClient.lrangeList(dateStr, 0, -1).then((result) => {
       if (Array.isArray(result)) {
         result.forEach((element) => {
-          const { id, emailStatus } = JSON.parse(element);
-          emailDao.updateEmailStatus(id, emailStatus);
+          const { id, email_status } = JSON.parse(element);
+          emailDao.updateEmailStatus(id, email_status);
         });
       } else {
-        const { id, emailStatus } = JSON.parse(result);
-        emailDao.updateEmailStatus(id, emailStatus);
+        const { id, email_status } = JSON.parse(result);
+        emailDao.updateEmailStatus(id, email_status);
       }
     });
   });
