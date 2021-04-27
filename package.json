@@ -1,0 +1,27 @@
+{
+  "name": "emailauto-backend",
+  "version": "1.0.0",
+  "description": "auto send email",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "lint": "./node_modules/.bin/eslint.cmd --fix ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "log4js": "^6.3.0",
+    "mysql": "^2.18.1",
+    "node-schedule": "^2.0.0",
+    "nodemailer": "^6.5.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "redis": "^3.1.1",
+    "uuidjs": "^4.2.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}

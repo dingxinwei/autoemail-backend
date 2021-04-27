@@ -1,0 +1,5 @@
+[2021-04-21T20:53:43.033] [INFO] cheese - [id=56e54a21-9c47-4cfa-8ac6-c1e4c86f5e16]日期无效
+[2021-04-21T22:08:29.764] [INFO] cheese - [id=3de6f7e0-91d4-4522-b606-020dab8e6fc4]邮件创建成功
+[2021-04-22T21:54:47.400] [INFO] cheese - [id=ecb46917-35d9-4f18-bc9c-ff1cce2f267f] 邮件创建成功
+[2021-04-22T22:00:00.550] [INFO] cheese - [id=ecb46917-35d9-4f18-bc9c-ff1cce2f267f] 发送失败
+[2021-04-22T22:00:00.611] [INFO] cheese - [id=ecb46917-35d9-4f18-bc9c-ff1cce2f267f] 邮件状态更新成功,[status=2]
