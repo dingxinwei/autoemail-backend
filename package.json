@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
-    "lint": "./node_modules/.bin/eslint.cmd --fix ."
+    "lint": ".\\node_modules\\.bin\\eslint --fix ."
   },
   "author": "",
   "license": "MIT",

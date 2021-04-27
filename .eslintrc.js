@@ -11,6 +11,6 @@ module.exports = {
     ecmaVersion: 12,
   },
   rules: {
-    end_of_line: 'CRLF',
+    'linebreak-style': [0, 'windows'],
   },
 };

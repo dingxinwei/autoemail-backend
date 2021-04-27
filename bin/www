@@ -6,4 +6,3 @@ app.listen(3000, () => {
   // eslint-disable-next-line linebreak-style
   logger.info('启动服务器成功！监听3000端口');
 });
-

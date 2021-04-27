@@ -6,7 +6,7 @@ const dateUtils = require('../utils/date');
 const redisClient = require('../utils/redisClient');
 const logger = require('../logs/logger');
 
-function createEmailAndScheduleJob(req, res) {//创建邮件，如果日期是今天则加入到定时任务
+function createEmailAndScheduleJob(req, res) { // 创建邮件，如果日期是今天则加入到定时任务
   const {
     sendDate, fromEmail, toEmail, emailSubject, emailContent, password,
   } = req.body;
@@ -98,10 +98,12 @@ function updateRedisDataToDatabase() { // 定时把redis中的数据同步到数
     redisClient.lrangeList(dateStr, 0, -1).then((result) => {
       if (Array.isArray(result)) {
         result.forEach((element) => {
+          // eslint-disable-next-line camelcase
           const { id, email_status } = JSON.parse(element);
           emailDao.updateEmailStatus(id, email_status);
         });
       } else {
+        // eslint-disable-next-line camelcase
         const { id, email_status } = JSON.parse(result);
         emailDao.updateEmailStatus(id, email_status);
       }
