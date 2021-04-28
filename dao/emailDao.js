@@ -56,9 +56,9 @@ function createEmail(data) {
       const dataArray = Object.values(data);
       dataArray.push(0);
       connection.query(sql.email.createEmail, dataArray, (error) => {
-        if (err) {
+        if (error) {
           logger.error(`[id=${dataArray[dataArray.length - 2]}] 邮件创建失败[原因:${error}]`);
-          reject(err);
+          reject(error);
         } else {
           logger.info(`[id=${dataArray[dataArray.length - 2]}] 邮件创建成功`);
           resolve();
